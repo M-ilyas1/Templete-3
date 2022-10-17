@@ -1,0 +1,848 @@
+*{
+    margin: 0px;
+}
+#top-container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(45deg, rgba(28, 30, 29, 0.272), rgba(40, 46, 44, 0.573)), url(dawid-zawila--G3rw6Y02D0-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#explore{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.explore-box{
+    width: 40%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+.explore-box h1{
+    font-size: 33px;
+    font-family:cursive;
+}
+.explore-box p{
+    padding-top: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.explore-box button{
+    padding: 10px;
+    width: 30%;
+    border: 2px solid orange;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.164);
+    margin-top: 40px;
+    border-radius: 100px;
+    font-size: 15px;
+    
+}
+.explore-box button:hover{
+    
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 100px;
+    color: white;
+}
+nav{
+    /* background: #0082e6  ; */
+    width: 100%;
+    height: 80px;
+}
+.logo{
+color: white;
+font-size: 35px;
+line-height: 80px;
+padding: 0 100px;
+font-weight: bold;
+font-family: Arial;
+}
+
+ul{
+    float: right;
+    margin-right: 150px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 7px 13px;
+    border: none;
+    text-decoration: none;
+}
+
+a.active,a:hover{
+    color: orange;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+/* responsiveness */
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+    .explore-box h1{
+        font-size: 20px;
+    }
+    .explore-box p{
+        font-size: 15px;
+    }
+    .explore-box button{
+        width: 60%;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px){
+.checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(9, 105, 137, 0.817);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 1s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: orande;
+
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+#first-section{
+    width: 90%;
+    height: 100vh;
+    margin: 5px auto;
+    text-align: center;
+    font-family: Arial;
+}
+#first-section h1{
+    padding-top: 40px;
+    font-size: 45px;
+}
+span{
+    color: orange;
+    font-weight: lighter;
+}
+.first-section-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
+.box1{
+    width: 40%;
+    height: 50vh;
+    margin-top: 20px;
+    background-image: url(Screenshot\ \(163\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.box2{
+    width: 40%;
+    height: 50vh;
+    margin-top: 20px;
+}
+.box2 h4{
+    text-align: start;
+    padding-top: 20px;
+}
+.box2-input{
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0px;
+    background-color: rgba(147, 144, 144, 0.256);
+    border: none;
+}
+.box2 select{
+    width: 49%;
+    padding: 15px;
+    background-color: rgba(147, 144, 144, 0.256);
+    border: none;
+    margin: 10px 0px;
+}
+.box2-button{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+    font-size: 15px;
+    background-color: orange;
+    border: none;
+    color: white;
+
+}
+
+@media screen and (min-width:375px) and (max-width:915px) {
+    #first-section{
+        width: 90%;
+        height: 140vh;
+        margin: 5px auto;
+    }
+    #first-section h1{
+        padding-top: 40px;
+        font-size: 25px;
+    }
+    .first-section-box{
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    .box1{
+        width: 80%;
+        height:55vh;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .box2{
+        width: 80%;
+        height: 55vh;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .box2 h4{
+        font-size: 15px;
+        text-align: start;
+        padding-top: 10px;
+    }
+    .box2-input{
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0px;
+        background-color: rgba(147, 144, 144, 0.256);
+        border: none;
+    }
+    .box2 select{
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(147, 144, 144, 0.256);
+        border: none;
+        margin: 5px 0px;
+    }
+    .box2-button{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0px;
+        font-size: 15px;
+        background-color: orange;
+        border: none;
+        color: white;
+    
+    }
+}
+
+/* =====================================second section start====================================================== */
+
+
+#second-section{
+    width: 90%;
+    height: 160vh;
+    margin: 0px auto;
+    font-family: Arial;
+}
+
+.second-section-box1{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+}
+.box-1{
+    /* background-color: orange; */
+    width: 30%;
+    height: 100%;
+}
+.second-section-box1 h2{
+    padding: 15px;
+}
+.second-section-box1 button{
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    color: red;
+    transition: all, 0.5s;
+}
+.second-section-box1 button:hover{
+    background-color: orange;
+    color: white;
+}
+.box-2{
+    background-image: url(1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 22%;
+    height: 100%;
+}
+.box-3{
+    background-image: url(2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 22%;
+    height: 100%;
+}
+.box-4{
+    background-image: url(3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 22%;
+    height: 100%;
+}
+
+.second-section-box2{
+    width: 30%;
+    height: 110vh;
+    float: left;
+    margin-top: 15px;
+
+}
+.box--1{
+    width: 100%;
+    height: 35vh;
+    background-image: url(4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box--2{
+    width: 100%;
+    height: 35vh;
+    margin-top: 15px;
+    background-image: url(5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box--3{
+    width: 100%;
+    height: 36vh;
+    margin-top: 15px;
+    background-image: url(6.png);
+    background-size: 100% 100%;
+}
+.second-section-box3{
+    width: 70%;
+    height: 110vh;
+    float: right;
+    margin-top: 15px;
+
+}
+.box---1{
+    width: 98.5%;
+    height: 54vh;
+    margin-left: 15px;
+    background-image: url(7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box---2{
+    width: 98.5%;
+    height: 54vh;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-image: url(8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width:375px) and (max-width:915px){
+    #second-section{
+        width: 90%;
+        height: 285vh;
+        margin: 0px auto;
+        font-family: Arial;
+    }
+    
+    .second-section-box1{
+        width: 100%;
+        height: 120vh;
+        display: block;
+        justify-content: space-between;
+    }
+    .box-1{
+        width: 80%;
+        height: 30vh;
+        margin: 0 auto;
+    }
+    .second-section-box1 h2{
+        font-size: 20px;
+    }
+    .second-section-box1 button{
+        background-color: transparent;
+        font-size: 15px;
+        padding: 2px 5px;
+        margin-left: 5px;
+    }
+    .box-2{
+        width: 80%;
+        height: 30vh;
+        margin: 5px auto;
+        background-image: url(1.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .box-3{
+        width: 80%;
+        height: 30vh;
+        margin: 5px auto;
+        background-image: url(2.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .box-4{
+        width: 80%;
+        height: 30vh;
+        margin: 5px auto;
+        background-image: url(3.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .second-section-box2{
+        width: 100%;
+        height: 95vh;
+        margin-top: 10px;
+    
+    }
+    .box--1{
+        width: 80%;
+        height: 30vh;
+        margin: 5px auto;
+        background-image: url(4.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .box--2{
+        width: 80%;
+        height: 30vh;
+        margin: 5px auto;
+        background-image: url(5.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .box--3{
+        width: 80%;
+        height: 30vh;
+        margin: 5px auto;
+        background-image: url(4.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .second-section-box3{
+        width: 100%;
+        height: 60vh;
+    
+    }
+    .box---1{
+        width: 90%;
+        height: 30vh;
+        margin: 5px auto;
+        background-image: url(7.png);
+        background-size: 100% 100%;
+    }
+    .box---2{
+        width: 90%;
+        height: 30vh;
+        margin: 5px auto;
+        background-image: url(8.png);
+        background-size: 100% 100%;
+    }
+    
+}
+/* =====================================third section start====================================================== */
+
+
+#third-section{
+    width: 90%;
+    height: 100vh;
+    margin: 0px auto;
+}
+#third-section h1{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.para{
+    padding: 20px;
+}
+.btn-btn{
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 0px 20px;
+    border: none;
+    color: red;
+    transition: all, 1s;
+}
+.btn-btn:hover{
+    background-color: orange;
+    color: white;
+}
+.third-section-box1{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+}
+.third-box-1{
+    width: 30%;
+    height: 80vh;
+}
+.img1{
+    width: 100%;
+    height: 45vh;
+    border-radius: 10px;
+    background-image: url(./9.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img2{
+    width: 100%;
+    height: 45vh;
+    border-radius: 10px;
+    background-image: url(./10.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img3{
+    width: 100%;
+    height: 45vh;
+    border-radius: 10px;
+    background-image: url(./11.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:375px) and (max-width:915px){
+    #third-section{
+        width: 90%;
+        height: 185vh;
+        margin: 5px auto;
+    }
+    .third-section-box1{
+        position: relative;
+        display: block;
+
+        /* overflow: hidden; */
+    }
+    .para{
+        padding: 12px;
+        font-size: 15px;
+    }
+    #third-section .btn-btn{
+        background-color: transparent;
+        font-size: 12px;
+        padding: 5px 8px;
+        margin: 0px 8px;
+    }
+    #third-section .btn-btn:hover{
+        background-color: orange;
+        color: white;
+    }
+    .third-box-1{
+        width: 80%;
+        margin: 0 auto;
+        height: 60vh;
+        overflow: hidden;
+    }
+    .img1{
+        width: 100%;
+        height: 25vh;
+    }
+    .img2{
+        width: 100%;
+        height: 25vh;
+    }
+    .img3{
+        width: 100%;
+        height: 25vh;
+    }
+}
+/* =====================================forth section start====================================================== */
+
+
+#forth-section{
+        width: 90%;
+        height: 160vh;
+        background-color: transparent;
+        margin: 0px auto;   
+}
+#forth-section h1{
+    padding: 30px 0px;
+}
+.forth-section-para{
+    padding: 20px 40px;
+    font-size: 20px;
+    font-family: Arial;
+    letter-spacing: 3px;
+}
+.forth-section-box1{
+    width: 100%;
+    height: 70vh;
+    box-shadow: 2px 2px 5px 5px rgba(128, 128, 128, 0.429);
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.forth-box-1{
+    width: 40%;
+    height: 60vh;
+    background-image: url(./Screenshot\ \(168\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.forth-box-2{
+    width: 40%;
+    height: 60vh;
+    background-color: transparent;
+}
+.forth-section-box2{
+    width: 100%;
+    height: 70vh;
+    margin-top: 80px;
+    box-shadow: 2px 2px 5px 5px rgba(128, 128, 128, 0.429);
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.forth-box-3{
+    width: 40%;
+    height: 60vh;
+    background-color: transparent;
+}
+.forth-box-4{
+    width: 40%;
+    height: 60vh;
+    background-image: url(./Screenshot\ \(169\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:375px) and (max-width:915px){
+    #forth-section{
+        width: 90%;
+        height: 200vh;
+    }
+    .forth-section-box1{
+        width: 100%;
+        height: 90vh;
+        overflow: hidden;
+        display: block;
+    }
+    .forth-box-1{
+        background-image: url(./Screenshot\ \(168\).png);
+        background-size: cover;
+        width: 80%;
+        height: 40vh;
+        margin: 20px auto;
+    }
+    .forth-box-2{
+        width: 80%;
+        height: 50vh;
+        margin: 0 auto;
+    }
+    .forth-section-box2{
+        width: 100%;
+        height: 90vh;
+        flex-wrap: wrap-reverse;
+        display: block;
+        margin-top: 30px;
+
+    }
+    .forth-box-3{
+        width: 80%;
+        margin: 0 auto;
+        height: 45vh;
+        overflow: hidden;
+    }
+    .forth-box-4{
+        background-image: url(./Screenshot\ \(169\).png);
+        background-size: cover;
+        width: 80%;
+        height: 40vh;
+        margin: 0px auto;
+        color: red;
+    }
+    
+    #forth-section h1{
+        padding: 30px 0px;
+    }
+    .forth-section-para{
+        padding: 20px 30px;
+        font-size: 12px;
+        font-family: Arial;
+        letter-spacing: 3px;
+    }
+    #forth-section .btn-btn{
+        background-color: transparent;
+        font-size: 12px;
+        padding: 5px 8px;
+        margin-left: 30px;
+    }
+    #forth-section .btn-btn:hover{
+        background-color: orange;
+        color: white;
+    } 
+}
+
+
+/* =====================================fifth section start====================================================== */
+
+#fifth-section{
+    width: 100%;
+    height: 40vh;
+    margin-top: 80px;
+    background-image:linear-gradient(45deg, rgba(50, 141, 153, 0.196), rgba(31, 160, 158, 0.658)), url(./eberhard.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fifth-section-box1{
+    width: 40%;
+    height: 20vh;
+    margin-top: 40px;
+
+}
+.fifth-section-box1 h1{
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: lighter;
+    color: white;
+    letter-spacing: 1.5px;
+    padding: 10px 0px;
+}
+#fifth-section-box1-input{
+    width: 70%;
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.297);
+    outline: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (min-width:375px) and (max-width:915px){
+    #fifth-section{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .fifth-section-box1{
+        width: 90%;
+        height: 20vh;
+        margin-top: 40px;
+    
+    }
+    .fifth-section-box1 h1{
+        font-size: 15px;
+        padding: 10px 0px;
+    }
+    #fifth-section-box1-input{
+        width: 60%;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+
+
+/* =====================================the-end section start================================================ */
+
+
+#the-end{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(2, 34, 54);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial;
+}
+.footer-box1{
+    width: 20%;
+    height: 30vh;
+    background-color: transparent;
+    color: white;
+}
+.footer-box1 ul{
+    list-style: none;
+}
+.footer-box1 ul li{
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+@media screen and (min-width:375px) and (max-width:915px){
+    #the-end{
+        width: 100%;
+        height: 40vh;
+    }
+    .footer-box1{
+        width: 30%;
+        height: 30vh;
+        color: white;
+    }
+    .footer-box1 ul{
+        list-style: none;
+    }
+    .footer-box1 ul li{
+        font-size: 10px;
+        padding-top: 10px;
+    }
+}
